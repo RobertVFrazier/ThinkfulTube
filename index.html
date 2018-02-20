@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>ThinkfulTube</title>
+        <link href="index.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header class="heading">Welcome to ThinkfulTube!</header>
+        <div class="formContainer">
+            <form id="js-form">
+                <label>Videos to search for: <input type="text" name="searchCategory" id="js-search-category" placeholder="kittens"></label>
+                <button type="submit" id="js-submit" class="submit">Search</button>
+            </form>
+        </div>
+        <ul class="resultsList js-resultsList"></ul>
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
