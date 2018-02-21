@@ -7,10 +7,32 @@ form, .resultsList{
 }
 
 .resultsList{
-    text-align: left;
-    list-style-type: none;
+    width: 100%;
+    font-size: 0;
 }
 
 label, submit{
     display: inline-block;
+}
+
+.thumbBox{
+    display: inline-block;
+    width: 320;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+
+.thumb{
+    display: table;
+}
+
+img{
+    display: block;
+}
+
+.caption{
+    display: table-caption;
+    caption-side: bottom;
+    width: 320;
+    font-size: 1rem;
 }
