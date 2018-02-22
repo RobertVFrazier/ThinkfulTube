@@ -8,7 +8,7 @@ function getDataFromApi(searchTerm, callback){
         maxResults: '10',
         key: 'AIzaSyD9p4OgF8DmaoYZYAQPLUIyhU7rgRJYVRo',
         q: searchTerm
-    }
+    };
     $.getJSON(youTubeUrl, query, callback);
 }
 
@@ -17,7 +17,7 @@ function renderResult(result){
     return `
     <li class='thumbBox'>
         <figure class='thumb'>
-            <a href='https://www.youtube.com/watch?v=${result.id.videoId}' target='_blank'><img src='${result.snippet.thumbnails.medium.url}' /></a>            
+            <a href='https://www.youtube.com/watch?v=${result.id.videoId}' target='_blank'><img src='${result.snippet.thumbnails.medium.url}' /></a>
             <figcaption class='caption'>${result.snippet.title}</figcaption>
         </figure>
     </li>
