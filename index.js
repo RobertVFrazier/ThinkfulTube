@@ -13,14 +13,14 @@ function getDataFromApi(searchTerm, callback){
 }
 
 function renderResult(result){
-    console.log(result);
+    // console.log(result);
     return `
-    <div class='thumbBox'>
+    <li class='thumbBox'>
         <figure class='thumb'>
-            <a href='https://www.youtube.com/watch?v=${result.id.videoId}' target='_blank'><img src='${result.snippet.thumbnails.medium.url}' /></a>
+            <a href='https://www.youtube.com/watch?v=${result.id.videoId}' target='_blank'><img src='${result.snippet.thumbnails.medium.url}' /></a>            
             <figcaption class='caption'>${result.snippet.title}</figcaption>
         </figure>
-    </div>
+    </li>
     `;
 }
 
@@ -29,7 +29,7 @@ function displayYouTubeData(data){
     $('.js-resultsList').html(results);
 }
 
-function userInput(){
+function main(){
     $('#js-form').submit(event => {
         event.preventDefault();
         let userChoice=$('input#js-search-category').val();
@@ -38,4 +38,4 @@ function userInput(){
     });
 }
 
-$(userInput);
+$(main);
