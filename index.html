@@ -9,11 +9,12 @@
     </head>
     <body>
         <header><h1>Welcome to ThinkfulTube!</h1></header>
-        <main role="main">
+        <main role="main" aria-live="assertive">
             <div class="formContainer">
                 <form id="js-form">
-                    <label>Videos to search for: <input type="text" name="searchCategory" id="js-search-category" placeholder="kittens"></label>
+                    <label>Videos to search for: <input type="text" name="searchCategory" id="js-search-category" placeholder="kittens" autofocus></label>
                     <button type="submit" id="js-submit" class="submit">Search</button>
+                    <div id="js-result-count"></div>
                 </form>
             </div>
         </main>

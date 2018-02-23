@@ -41,3 +41,7 @@ img{
     width: 320;
     font-size: 1rem;
 }
+
+#js-result-count{
+    font-size: 1em;
+}
