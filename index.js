@@ -17,7 +17,7 @@ function renderResult(result){
     return `
     <li class='thumbBox'>
         <figure class='thumb'>
-            <a href='https://www.youtube.com/watch?v=${result.id.videoId}' target='_blank'><img src='${result.snippet.thumbnails.medium.url}' alt='' /></a>
+            <a href='https://www.youtube.com/watch?v=${result.id.videoId}' target='_blank' aria-label='Click for video'><img src='${result.snippet.thumbnails.medium.url}' alt='' /></a>
             <figcaption class='caption'>${result.snippet.title}</figcaption>
         </figure>
     </li>
